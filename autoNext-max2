@@ -1,0 +1,9 @@
+#!/bin/bash
+while true
+do
+	echo Next song in:
+	var=$RANDOM
+	R=$[31 + $var%3]
+	echo $R seconds
+	sleep $R
+done
