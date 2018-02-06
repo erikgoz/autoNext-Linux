@@ -1,0 +1,20 @@
+#!/bin/bash
+while true
+do
+	spotifycli --next
+	var=$RANDOM
+	R=$[$var%600]
+	M=[$var%7]
+	if(($M==0));
+	then
+		P=$[$var%75]
+		spotifycli --pause
+		echo Pausing music for
+		echo $P sec
+		sleep $P
+		spotifycli --play
+	fi
+	echo Next song skip in
+	echo $R seconds
+	sleep $R
+done

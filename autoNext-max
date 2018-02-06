@@ -1,7 +1,8 @@
 #!/bin/bash
 while true
 do
-	echo Next song
+	echo Next song skip in:
+	echo 30 seconds
 	spotifycli --next
 	sleep 31
 done

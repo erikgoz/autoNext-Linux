@@ -1,0 +1,10 @@
+#!/bin/bash
+while true
+do
+	spotifycli --next
+	var=$RANDOM
+	R=$[30 + $var%39]
+	echo Next song in:
+	echo $R seconds
+	sleep $R
+done
