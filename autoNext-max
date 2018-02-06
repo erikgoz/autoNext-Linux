@@ -1,0 +1,7 @@
+#!/bin/bash
+while true
+do
+	echo Next song
+	spotifycli --next
+	sleep 31
+done
