@@ -6,4 +6,5 @@ do
 	R=$[31 + $var%3]
 	echo $R seconds
 	sleep $R
+	spotifycli --next
 done

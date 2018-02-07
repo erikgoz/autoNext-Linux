@@ -4,9 +4,8 @@ do
 	spotifycli --next
 	var=$RANDOM
 	R=$[$var%600]
-	M=[$var%7]
-	if(($M==0));
-	then
+	M=$[$var%7]
+	if (($M == 0)); then
 		P=$[$var%75]
 		spotifycli --pause
 		echo Pausing music for
